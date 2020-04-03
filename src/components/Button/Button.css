@@ -1,8 +1,14 @@
-* {
+button {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 14px;
   padding: 10px;
   border-radius: 5px;
+}
+/*Default Buttons*/
+.button-default {
+  background-color: #22262a;
+  color: white;
+  border: #22262a;
 }
 .button-primary {
   background-color: #33a0ff;
@@ -12,27 +18,79 @@
 .button-success {
   background-color: green;
   color: white;
-  border: #0069d9;
+  border: green;
 }
 
 .button-danger {
   background-color: red;
   color: white;
-  border: #0069d9;
+  border: red;
 }
 
 .button-warning {
   background-color: yellow;
   color: white;
-  border: #0069d9;
+  border: yellow;
 }
+
+/*Hover Button*/
 
 .button-darken:hover {
   filter: brightness(80%);
 }
 
-.button-outline {
+/*Outline Buttons*/
+.default-outline {
+  background-color: white;
+  color: #22262a;
+  border: 2px solid;
+}
+.primary-outline {
   background-color: white;
   color: #33a0ff;
-  border: #33a0ff;
+  border: 2px solid;
+}
+.success-outline {
+  background-color: white;
+  color: green;
+  border: 2px solid;
+}
+.danger-outline {
+  background-color: white;
+  color: red;
+  border: 2px solid;
+}
+.warning-outline {
+  background-color: white;
+  color: yellow;
+  border: 2px solid;
+}
+
+.button-large {
+  padding: 10px 50px;
+}
+
+.default-floating {
+  background: rgba(246, 247, 248, 0.2);
+  color: #22262a;
+}
+.primary-floating {
+  background: rgba(51, 160, 255, 0.2);
+  color: #33a0ff;
+}
+.success-floating {
+  background: rgba(10, 208, 10, 0.2);
+  color: #0ad00a;
+}
+.danger-floating {
+  background: rgba(255, 72, 88, 0.2);
+  color: #ff4252;
+}
+.warning-floating {
+  background: rgba(255, 198, 0, 0.2);
+  color: #ffc600;
+}
+.button-large {
+  width: 171px;
+  height: 60px;
 }

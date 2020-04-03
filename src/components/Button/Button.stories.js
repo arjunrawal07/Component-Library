@@ -108,4 +108,7 @@ storiesOf("Button", module)
 
   .add("Warning Floating Large", () => (
     <Button label="Do Something" type="warning" warningFloating large />
-  ));
+  ))
+
+  .add("Heart Icon", () => <Button primaryFloating hearticon />)
+  .add("Cart Icon", () => <Button primaryFloating carticon />);

@@ -1,8 +1,11 @@
 import React from "react";
 import "./Button.css";
+// import Icons from "./Icons.js";
+
 // This is a functional component - just sent up a little differently as an arrow function!
-const Button = props => {
+const Button = (props) => {
   let classList = "";
+  let imgClass = "";
 
   let types = ["default", "primary", "danger", "success", "warning"];
 
@@ -43,10 +46,24 @@ const Button = props => {
   if (props.warningFloating) {
     classList += ` warning-floating`;
   }
-
   if (props.large) {
     classList += ` button-large`;
   }
-  return <button className={classList}>{props.label}</button>;
+  if (props.hearticon) {
+    imgClass += ` heart-icon`;
+  }
+  if (props.carticon) {
+    imgClass += ` cart-icon`;
+  }
+
+  return (
+    <div>
+      <button className={classList}>
+        {props.label}
+
+        <div className={imgClass}></div>
+      </button>
+    </div>
+  );
 };
 export default Button;

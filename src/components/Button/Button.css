@@ -94,3 +94,20 @@ button {
   width: 171px;
   height: 60px;
 }
+
+.heart-icon {
+  background-image: url("https://i.imgur.com/D8I9wXv.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* padding: 10px; */
+  width: 46px;
+  height: 46px;
+}
+
+.cart-icon {
+  background-image: url("https://i.imgur.com/jfUqoMS.png");
+  background-size: contain;
+  background-position: no-repeat;
+  width: 46px;
+  height: 46px;
+}

@@ -111,4 +111,10 @@ storiesOf("Button", module)
   ))
 
   .add("Heart Icon", () => <Button primaryFloating hearticon />)
-  .add("Cart Icon", () => <Button primaryFloating carticon />);
+  .add("Cart Icon", () => <Button primaryFloating carticon />)
+  .add("Add To Cart Button", () => (
+    <Button label="Add To Cart" primaryFloating addCart />
+  ))
+  .add("Add To Favorites Button", () => (
+    <Button label="Add to Favorites" primaryFloating addFavorites />
+  ));

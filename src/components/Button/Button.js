@@ -1,6 +1,5 @@
 import React from "react";
 import "./Button.css";
-// import Icons from "./Icons.js";
 
 // This is a functional component - just sent up a little differently as an arrow function!
 const Button = (props) => {
@@ -55,13 +54,18 @@ const Button = (props) => {
   if (props.carticon) {
     imgClass += ` cart-icon`;
   }
+  if (props.addFavorites) {
+    classList += ` add-favorites`;
+  }
+  if (props.addCart) {
+    classList += ` add-cart`;
+  }
 
   return (
     <div>
       <button className={classList}>
-        {props.label}
-
         <div className={imgClass}></div>
+        {props.label}
       </button>
     </div>
   );

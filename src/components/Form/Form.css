@@ -1,0 +1,22 @@
+.form-default {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  width: 300px;
+  height: 38px;
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+}
+
+.form-medium {
+  width: 300px;
+  height: 46px;
+}
+
+.form-large {
+  width: 300px;
+  height: 60px;
+}

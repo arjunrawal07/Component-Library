@@ -1,7 +1,7 @@
 .products-defaultMac {
-  background-color: #f6f7f8;
   width: 270px;
   height: 349px;
+  border: 2px solid #707070;
 }
 
 .products-defaultMacImg {
@@ -13,7 +13,9 @@
   padding-top: 30px;
   margin-left: 15px;
 }
-
+.products-gray {
+  background-color: #fafafb;
+}
 h4 {
   text-align: center;
   /* margin-top: 70%; */
@@ -42,6 +44,55 @@ h4 {
   text-decoration: line-through;
 }
 
-.products-lighten:hover {
-  background-color: 
+.products-optionsLight {
+  background-color: white;
+}
+
+.options {
+  width: 102px;
+  height: 46px;
+  padding-top: 30px;
+  margin-left: 15px;
+}
+.heart {
+  background-color: white;
+  border: 2px solid #33a0ff;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/D8I9wXv.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart {
+  background-color: white;
+  border: 2px solid #33a0ff;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/jfUqoMS.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products-horizontal {
+  width: 570px;
+  height: 224px;
+}
+
+.horizontalText {
+  margin-left: 100px;
+  margin-top: -160px;
+}
+
+.products-horizontalHover:hover {
+  filter: brightness(80%);
+}
+
+.products-defaultBeats {
+  width: 324px;
+  height: 158px;
+}
+
+.prodcuts-defaultBeatsImg {
+  background-image: url("https://i.imgur.com/FfnJPgZ.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }

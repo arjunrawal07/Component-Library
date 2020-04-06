@@ -3,7 +3,10 @@ import "./Products.css";
 
 const Products = (props) => {
   let productName = "";
-  let products = ["Apple Macbook Pro"];
+  let products = [
+    "Apple Macbook Pro",
+    "Beats Solo 2 On Ear Headphones - Black",
+  ];
   let classList = "";
   let imgClass = "";
   let pricetag = "";
@@ -30,9 +33,60 @@ const Products = (props) => {
   if (oldPrices.includes(props.original)) {
     originalPrice += ` ${props.original}`;
   }
+  if (props.gray) {
+    classList += ` products-gray`;
+  }
+  if (props.optionsLight) {
+    classList += ` products-optionsLight`;
+    return (
+      <div className={classList}>
+        <div className={imgClass}>
+          <div className="options">
+            <div className="heart"></div>
+            <div className="cart"></div>
+          </div>
+        </div>
+        <h4>{productName}</h4>
+        <div className="rating">
+          <p>Rating</p>
+        </div>
+        <div className="costs">
+          <div className="pricetag">{pricetag} </div>
+          <div className="oldPrice"> {oldPrices}</div>
+        </div>
+      </div>
+    );
+  }
 
-  if (props.lighten) {
-    classList += `products-lighten`;
+  if (props.horizontal) {
+    classList += ` products-horizontal`;
+    return (
+      <div className={classList}>
+        <div className={imgClass}></div>
+        <div className="horizontalText">
+          <h4>{productName}</h4>
+          <div className="rating">
+            <p>Rating</p>
+          </div>
+          <div className="costs">
+            <div className="pricetag">{pricetag} </div>
+            <div className="oldPrice"> {oldPrices}</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (props.horizontalHover) {
+    classList += ` products-horizontalHover`;
+  }
+
+  if (props.defaultBeats) {
+    classList += ` products-defaultBeats`;
+  }
+
+  if (props.defaultBeatsImg) {
+    imgClass += ` products-defaultBeatsImg`;
   }
   return (
     <div className={classList}>

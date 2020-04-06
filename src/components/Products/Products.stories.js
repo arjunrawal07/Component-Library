@@ -16,7 +16,7 @@ storiesOf("Products", module)
     </div>
   ))
 
-  .add("Vertical Macbook Pro Default Hover", () => (
+  .add("Vertical Macbook Pro Default Options Light", () => (
     <div>
       <Products
         product="Apple Macbook Pro"
@@ -24,7 +24,58 @@ storiesOf("Products", module)
         original="$599"
         defaultMac
         defaultMacImg
-        lighten
+        optionsLight
+      />
+    </div>
+  ))
+
+  .add("Vertical Macbook Pro Default Gray", () => (
+    <div>
+      <Products
+        product="Apple Macbook Pro"
+        price="$499"
+        original="$599"
+        defaultMac
+        defaultMacImg
+        gray
+      />
+    </div>
+  ))
+  .add("Horizontal Macbook Pro Default", () => (
+    <div>
+      <Products
+        product="Apple Macbook Pro"
+        price="$499"
+        original="$599"
+        defaultMac
+        defaultMacImg
+        horizontal
+      />
+    </div>
+  ))
+  .add("Horizontal Macbook Pro Default Hover", () => (
+    <div>
+      <Products
+        product="Apple Macbook Pro"
+        price="$499"
+        original="$599"
+        defaultMac
+        defaultMacImg
+        horizontal
+        horizontalHover
+      />
+    </div>
+  ))
+  .add("Beats Default", () => (
+    <div>
+      <Products
+        product="Beats Solo 2 On Ear
+        Headphones - Black"
+        price="$499"
+        original="$599"
+        defaultBeats
+        defaultBeatsImg
+        horizontal
       />
     </div>
   ));

@@ -91,7 +91,7 @@ storiesOf("Form", module)
 
   .add("Number Input", () => (
     <div>
-      <Form label="Counter" type="number" number />
+      <Form label="Counter" type="number" counter />
     </div>
   ))
 
@@ -115,5 +115,33 @@ storiesOf("Form", module)
         large
         redeemLarge
       />
+    </div>
+  ))
+
+  .add("Empty Black Checkbox", () => (
+    <div>
+      <Form type="checkbox" />
+    </div>
+  ))
+  .add("Checked Black Checkbox", () => (
+    <div>
+      <Form type="checkbox" checkedState />
+    </div>
+  ))
+
+  .add("Empty Blue Checkbox", () => (
+    <div>
+      <Form type="checkbox" blue />
+    </div>
+  ))
+
+  .add("Checked Blue Checkbox", () => (
+    <div>
+      <Form type="checkbox" checkedState />
+    </div>
+  ))
+  .add("No Popups", () => (
+    <div>
+      <Form type="checkbox" popup />
     </div>
   ));

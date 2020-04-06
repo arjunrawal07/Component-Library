@@ -7,6 +7,8 @@ const Products = (props) => {
   let classList = "";
   let imgClass = "";
   let pricetag = "";
+  let originalPrice = "";
+  let oldPrices = ["$599"];
   let prices = ["$499"];
 
   if (props.defaultMac) {
@@ -24,6 +26,14 @@ const Products = (props) => {
   if (props.defaultMacImg) {
     imgClass += ` products-defaultMacImg`;
   }
+
+  if (oldPrices.includes(props.original)) {
+    originalPrice += ` ${props.original}`;
+  }
+
+  if (props.lighten) {
+    classList += `products-lighten`;
+  }
   return (
     <div className={classList}>
       <div className={imgClass}></div>
@@ -31,7 +41,10 @@ const Products = (props) => {
       <div className="rating">
         <p>Rating</p>
       </div>
-      <h5>{pricetag}</h5>
+      <div className="costs">
+        <div className="pricetag">{pricetag} </div>
+        <div className="oldPrice"> {oldPrices}</div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,25 @@
-.form-defaultMacImg {
-  background-image: url("https://i.imgur.com/tmPo0zT.png");
+.products-defaultMac {
+  background-color: #f6f7f8;
+  width: 270px;
+  height: 349px;
+}
+
+.products-defaultMacImg {
+  margin-top: 100%;
+  margin-bottom: 100%;
+  border: 2px solid purple;
+}
+
+h4 {
+  text-align: center;
+  /* margin-top: 70%; */
+}
+
+.rating {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  color: #ff4858;
 }

@@ -10,7 +10,7 @@ const Products = (props) => {
   let prices = ["$499"];
 
   if (props.defaultMac) {
-    classList += ` form-defaultMac`;
+    classList += ` products-defaultMac`;
   }
 
   if (products.includes(props.product)) {
@@ -22,13 +22,13 @@ const Products = (props) => {
   }
 
   if (props.defaultMacImg) {
-    imgClass += ` form-defaultMacImg`;
+    imgClass += ` products-defaultMacImg`;
   }
   return (
     <div className={classList}>
       <div className={imgClass}></div>
       <h4>{productName}</h4>
-      <div>
+      <div className="rating">
         <p>Rating</p>
       </div>
       <h5>{pricetag}</h5>

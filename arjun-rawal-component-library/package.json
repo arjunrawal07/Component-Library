@@ -1,0 +1,19 @@
+{
+  "name": "arjun-rawal-component-library",
+  "version": "1.0.0",
+  "description": "My first component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunrawal07/Project-5-Arjun-s-Component-Library.git"
+  },
+  "author": "Arjun Rawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjunrawal07/Project-5-Arjun-s-Component-Library/issues"
+  },
+  "homepage": "https://github.com/arjunrawal07/Project-5-Arjun-s-Component-Library#readme"
+}

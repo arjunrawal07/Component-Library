@@ -97,16 +97,39 @@ input[type="checkbox"]:checked {
 .form-checkbox {
   position: absolute;
   border: 2px solid black;
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   background-color: white;
 }
-
-.form-blue {
+.blackCheck {
+  position: absolute;
   border: 2px solid black;
-  width: 18px;
-  height: 18px;
-  background-color: white;
+  width: 10px;
+  height: 10px;
+  background-image: url("https://i.imgur.com/wTa0hq1.png");
+  background-size: cover;
+  background-color: black;
+}
+.form-blue {
+  border: 2px solid white;
+  position: absolute;
+  border: 2px solid #33a0ff;
+  width: 10px;
+  height: 10px;
+}
+
+.blueCheck {
+  position: absolute;
+  border: 2px solid #33a0ff;
+  width: 10px;
+  height: 10px;
+  background-image: url("https://i.imgur.com/wTa0hq1.png");
+  background-size: cover;
+  background-color: #33a0ff;
+}
+
+.text {
+  padding-left: 20px;
 }
 .popup {
   border: 2px solid red;

@@ -55,7 +55,6 @@ p {
 }
 
 .form-number {
-  border: 2px solid blue;
   width: 116px;
   height: 46px;
   background-color: #f6f7f8;
@@ -64,10 +63,13 @@ p {
   justify-content: center;
   align-items: center;
 }
-.increment .decrement {
+button {
   background-color: #f6f7f8;
+  border: none;
+  margin: 0 10px;
   color: #33a0ff;
 }
+
 .form-redeemMedium {
   color: white;
   width: 118px;

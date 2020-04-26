@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react";
 
 import Form from "./Form";
 import SelectForm from "./SelectForms";
+import NumberInput from "./NumberInput";
+import Redeem from "./Redeem";
 
 storiesOf("Form", module)
   //Text input with label
@@ -93,14 +95,15 @@ storiesOf("Form", module)
 
   //Number input
   .add("Number Input", () => (
-    <div>
-      <Form label="Counter" type="number" counter />
+    <div className="number">
+      <NumberInput label="Counter" type="number" counter />
     </div>
   ))
 
+  //Text Input w Button
   .add("Voucher Button Medium", () => (
     <div className="header">
-      <Form
+      <Redeem
         type="default"
         placeholder="Voucher code"
         buttontext="Redeem"
@@ -111,7 +114,7 @@ storiesOf("Form", module)
   ))
   .add("Voucher Button Large", () => (
     <div className="header">
-      <Form
+      <Redeem
         type="default"
         placeholder="Voucher code"
         buttontext="Redeem"

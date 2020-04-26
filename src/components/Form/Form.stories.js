@@ -2,8 +2,11 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import Form from "./Form";
+import SelectForm from "./SelectForms";
 
 storiesOf("Form", module)
+  //Text input with label
+
   .add("Default Email", () => (
     <div className="header">
       Email
@@ -24,18 +27,16 @@ storiesOf("Form", module)
       <Form label="Email" type="default" placeholder="Email" large />
     </div>
   ))
-
+  //Select inputs
   .add("Select Input Default", () => (
     <div className="header">
-      Select
-      <Form label="Select" type="select-default" placeholder="Select" />
+      <SelectForm label="Select" type="select-default" placeholder="Select" />
     </div>
   ))
 
   .add("Select Input Medium", () => (
     <div className="header">
-      Select
-      <Form
+      <SelectForm
         label="Select"
         type="select-default"
         placeholder="Select"
@@ -46,8 +47,7 @@ storiesOf("Form", module)
 
   .add("Select Input Large", () => (
     <div className="header">
-      Select
-      <Form
+      <SelectForm
         label="Select"
         type="select-default"
         placeholder="Select"
@@ -58,15 +58,18 @@ storiesOf("Form", module)
 
   .add("Select Input Default Filled", () => (
     <div className="header">
-      Select
-      <Form label="Select" type="select-default" placeholder="Select" filled />
+      <SelectForm
+        label="Select"
+        type="select-default"
+        placeholder="Select"
+        filled
+      />
     </div>
   ))
 
   .add("Select Input Medium Filled", () => (
     <div className="header">
-      Select
-      <Form
+      <SelectForm
         label="Select"
         type="select-default"
         placeholder="Select"
@@ -78,8 +81,7 @@ storiesOf("Form", module)
 
   .add("Select Input Large Filled", () => (
     <div className="header">
-      Select
-      <Form
+      <SelectForm
         label="Select"
         type="select-default"
         placeholder="Select"
@@ -89,6 +91,7 @@ storiesOf("Form", module)
     </div>
   ))
 
+  //Number input
   .add("Number Input", () => (
     <div>
       <Form label="Counter" type="number" counter />

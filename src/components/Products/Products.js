@@ -85,12 +85,8 @@ const Products = (props) => {
     classList += ` products-defaultBeats`;
   }
 
-  if (props.defaultBeatsImg) {
-    imgClass += ` products-defaultBeatsImg`;
-  }
   return (
     <div className={classList}>
-      <div className={imgClass}></div>
       <h4>{productName}</h4>
       <div className="rating">
         <p>Rating</p>

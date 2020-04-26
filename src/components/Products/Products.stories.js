@@ -74,8 +74,6 @@ storiesOf("Products", module)
         price="$499"
         original="$599"
         defaultBeats
-        defaultBeatsImg
-        horizontal
       />
     </div>
   ));

@@ -78,8 +78,8 @@ h4 {
 }
 
 .horizontalText {
-  margin-left: 100px;
-  margin-top: -160px;
+  margin-left: 150px;
+  padding-top: 5px;
 }
 
 .products-horizontalHover:hover {
@@ -89,10 +89,7 @@ h4 {
 .products-defaultBeats {
   width: 324px;
   height: 158px;
-}
-
-.prodcuts-defaultBeatsImg {
   background-image: url("https://i.imgur.com/FfnJPgZ.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
 }

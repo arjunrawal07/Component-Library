@@ -14,6 +14,7 @@ const Form = (props) => {
   let test = "";
 
   const callBack = (event) => {
+    event.preventDefault();
     test += event.target.value;
     if (event.target.value !== test) {
       console.log("Submitted!");

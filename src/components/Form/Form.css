@@ -66,7 +66,7 @@ p {
 button {
   background-color: #f6f7f8;
   border: none;
-  margin: 0 10px;
+  margin: 10px;
   color: #33a0ff;
 }
 
@@ -86,13 +86,6 @@ button {
   margin: 0px -120px;
   border-radius: 5px;
 }
-/* 
-input[type="checkbox"]:checked {
-  border: 2px solid black;
-  background-color: black;
-  width: 18px;
-  height: 18px;
-} */
 
 .form-checkbox {
   position: absolute;
@@ -166,8 +159,6 @@ input[type="checkbox"]:checked {
   height: 10px;
   border: solid blue;
   border-width: 0 3px 3px 0;
-  /* -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg); */
   transform: rotate(45deg);
 }
 
@@ -176,35 +167,3 @@ input[type="checkbox"]:checked {
   height: 349px;
   background-color: lightgray;
 }
-
-/* .checkedState::after {
-  border: 2px solid black;
-  width: 18px;
-  height: 18px;
-  background-color: black;
-}
-#toggle:checked ~ .control-me::after {
-  border: 2px solid black;
-  width: 18px;
-  height: 18px;
-  background-color: black;
-}
-.visually-hidden {
-  position: absolute;
-  left: -100vw;
-} */
-/* 
-label {
-  background: white;
-  border: 2px solid black;
-  border-radius: 0.5rem;
-  width: 18px;
-  height: 18px;
-} */
-
-/* .form-checkbox :checked {
-  border: 2px solid black;
-  width: 18px;
-  height: 18px;
-  background-color: black;
-} */

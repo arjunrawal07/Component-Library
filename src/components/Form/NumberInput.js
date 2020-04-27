@@ -36,14 +36,10 @@ class NumberInput extends React.Component {
 
   render() {
     return (
-      <div className={classList}>
-        <div className="decrement">
+      <div className="number">
           <button onClick={this.decrement}>-</button>
-        </div>
-        <div className="number">{this.state.count}</div>
-        <div className="increment">
+        {this.state.count}
           <button onClick={this.increment}>+</button>
-        </div>
       </div>
     );
   }

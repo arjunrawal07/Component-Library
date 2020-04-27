@@ -1,46 +1,51 @@
 import React from "react";
 import "./Form.css";
 
-const NumberInput = (props) => {
-  let classList = "";
-  let imgClass = "";
-  let placeText = "";
-  let count = "0";
-  let types = "number";
+let classList = "";
+let imgClass = "";
+let placeText = "";
+let types = "number";
 
-  const decrement = ({ count }) => {
-    return (count -= 1);
-  };
-
-  const increment = ({ count }) => {
-    return (count += 1);
-  };
-
-  if (types.includes(props.type)) {
-    classList += ` form-${props.type}`;
+class NumberInput extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      count: props.value,
+      min: props.min,
+      max: props.max,
+      step: props.step,
+    };
   }
+  decrement = () => {
+    if (this.state.min < this.state.count) {
+      this.setState({ count: this.state.count - this.state.step });
+    }
+  };
 
-  if (props.counter) {
-    classList += ` form-number`;
+  increment = () => {
+    if (this.state.max > this.state.count) {
+      this.setState({ count: this.state.count + this.state.step });
+    }
+  };
+  // if (types.includes(props.type)) {
+  //   classList += ` form-${props.type}`;
+  // }
+
+  // if (props.counter) {
+  //   classList += ` form-number`;
+
+  render() {
     return (
       <div className={classList}>
         <div className="decrement">
-          <button onClick={decrement}>-</button>
+          <button onClick={this.decrement}>-</button>
         </div>
-        <div className="number">{count}</div>
+        <div className="number">{this.state.count}</div>
         <div className="increment">
-          <button onClick={increment}>+</button>
+          <button onClick={this.increment}>+</button>
         </div>
       </div>
     );
   }
-
-  return (
-    <div>
-      <input className={classList} type="text" placeholder={placeText} />
-      <div className={imgClass}></div>
-    </div>
-  );
-};
-
+}
 export default NumberInput;

@@ -1,0 +1,401 @@
+button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+}
+/*Default Buttons*/
+.button-default {
+  background-color: #22262a;
+  color: white;
+  border: #22262a;
+}
+.button-primary {
+  background-color: #33a0ff;
+  color: white;
+  border: #33a0ff;
+}
+.button-success {
+  background-color: green;
+  color: white;
+  border: green;
+}
+
+.button-danger {
+  background-color: red;
+  color: white;
+  border: red;
+}
+
+.button-warning {
+  background-color: yellow;
+  color: white;
+  border: yellow;
+}
+
+/*Hover Button*/
+
+.button-darken:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+/*Outline Buttons*/
+.default-outline {
+  background-color: white;
+  color: #22262a;
+  border: 2px solid;
+}
+.primary-outline {
+  background-color: white;
+  color: #33a0ff;
+  border: 2px solid;
+}
+.success-outline {
+  background-color: white;
+  color: green;
+  border: 2px solid;
+}
+.danger-outline {
+  background-color: white;
+  color: red;
+  border: 2px solid;
+}
+.warning-outline {
+  background-color: white;
+  color: yellow;
+  border: 2px solid;
+}
+
+.button-large {
+  padding: 10px 50px;
+}
+
+.default-floating {
+  background: rgba(246, 247, 248, 0.2);
+  color: #22262a;
+}
+.primary-floating {
+  background: rgba(51, 160, 255, 0.2);
+  color: #33a0ff;
+}
+.success-floating {
+  background: rgba(10, 208, 10, 0.2);
+  color: #0ad00a;
+}
+.danger-floating {
+  background: rgba(255, 72, 88, 0.2);
+  color: #ff4252;
+}
+.warning-floating {
+  background: rgba(255, 198, 0, 0.2);
+  color: #ffc600;
+}
+.button-large {
+  width: 171px;
+  height: 60px;
+}
+
+.heart-icon {
+  background-image: url("https://i.imgur.com/D8I9wXv.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 46px;
+  height: 46px;
+}
+
+.cart-icon {
+  background-image: url("https://i.imgur.com/jfUqoMS.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 46px;
+  height: 46px;
+}
+
+.add-cart {
+  background-image: url("https://i.imgur.com/jfUqoMS.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 150px;
+  height: 46px;
+}
+
+.add-favorites {
+  padding-left: 0px;
+  background-image: url("https://i.imgur.com/D8I9wXv.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 150px;
+  height: 46px;
+}
+
+.form-default {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  width: 300px;
+  height: 38px;
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+}
+
+.form-medium {
+  width: 300px;
+  height: 46px;
+}
+
+.form-large {
+  width: 300px;
+  height: 60px;
+}
+
+.form-select-default {
+  background-image: url("https://i.imgur.com/887XzU1.png");
+  background-repeat: no-repeat;
+  background-position-x: 185px;
+  background-position-y: 20px;
+  width: 200px;
+  height: 38px;
+  border-radius: 5px;
+}
+
+.form-select-medium {
+  background-position-x: 275px;
+  background-position-y: 25px;
+  width: 300px;
+  height: 46px;
+}
+
+.form-select-large {
+  background-position-x: 275px;
+  background-position-y: 30px;
+  width: 300px;
+  height: 60px;
+}
+
+.header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+}
+
+.form-select-fill {
+  background-color: #fafafb;
+}
+
+.form-number {
+  width: 116px;
+  height: 46px;
+  background-color: #f6f7f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: #f6f7f8;
+  border: none;
+  margin: 10px;
+  color: #33a0ff;
+}
+
+.form-redeemMedium {
+  color: white;
+  width: 118px;
+  height: 46px;
+  background-color: #33a0ff;
+  margin: 0px -120px;
+  border-radius: 5px;
+}
+.form-redeemLarge {
+  color: white;
+  width: 118px;
+  height: 60px;
+  background-color: #33a0ff;
+  margin: 0px -120px;
+  border-radius: 5px;
+}
+
+.form-checkbox {
+  position: absolute;
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+.blackCheck {
+  position: absolute;
+  border: 2px solid black;
+  width: 10px;
+  height: 10px;
+  background-image: url("https://i.imgur.com/wTa0hq1.png");
+  background-size: cover;
+  background-color: black;
+}
+.form-blue {
+  border: 2px solid white;
+  position: absolute;
+  border: 2px solid #33a0ff;
+  width: 10px;
+  height: 10px;
+}
+
+.blueCheck {
+  position: absolute;
+  border: 2px solid #33a0ff;
+  width: 10px;
+  height: 10px;
+  background-image: url("https://i.imgur.com/wTa0hq1.png");
+  background-size: cover;
+  background-color: #33a0ff;
+}
+
+.text {
+  padding-left: 20px;
+}
+.popup {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.form-checkbox:checked ~ .form-checkbox {
+  background-color: black;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form-checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+.form-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid blue;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form-defaultMac {
+  width: 270px;
+  height: 349px;
+  background-color: lightgray;
+}
+
+.products-defaultMac {
+  width: 270px;
+  height: 349px;
+  border: 2px solid #707070;
+}
+
+.products-defaultMacImg {
+  background-image: url("https://i.imgur.com/tmPo0zT.png");
+  width: 236px;
+  height: 153px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30px;
+  margin-left: 15px;
+}
+.products-gray {
+  background-color: #fafafb;
+}
+h4 {
+  text-align: center;
+  /* margin-top: 70%; */
+}
+
+.rating {
+  text-align: center;
+}
+
+.costs {
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.pricetag {
+  color: #ff4858;
+  margin-right: 5px;
+}
+
+.oldPrice {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.products-optionsLight {
+  background-color: white;
+}
+
+.options {
+  width: 102px;
+  height: 46px;
+  padding-top: 30px;
+  margin-left: 15px;
+}
+.heart {
+  background-color: white;
+  border: 2px solid #33a0ff;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/D8I9wXv.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart {
+  background-color: white;
+  border: 2px solid #33a0ff;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/jfUqoMS.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products-horizontal {
+  width: 570px;
+  height: 224px;
+}
+
+.horizontalText {
+  margin-left: 150px;
+  padding-top: 5px;
+}
+
+.products-horizontalHover:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.products-defaultBeats {
+  width: 324px;
+  height: 158px;
+  background-image: url("https://i.imgur.com/FfnJPgZ.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+
+/*# sourceMappingURL=main.ecdb9253.chunk.css.map*/

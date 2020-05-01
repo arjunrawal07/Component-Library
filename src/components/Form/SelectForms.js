@@ -30,10 +30,26 @@ const SelectForm = (props) => {
 
   return (
     <div>
-      <input className={classList} type="text" placeholder={placeText} />
-      <div className={imgClass}></div>
+      <label for="myOptions"></label>
+      <input
+        className={classList}
+        list="options"
+        id="myOptionsr"
+        name="myOptions"
+        placeholder="Select"
+      />
+      <datalist id="options">
+        <option value="Testing 1"></option>
+        <option value="Testing 2"></option>
+        <option value="Testing 3"></option>
+      </datalist>
     </div>
   );
 };
 
 export default SelectForm;
+
+{
+  /* <input className={classList} type="text" placeholder={placeText} />
+      <div className={imgClass}></div> */
+}

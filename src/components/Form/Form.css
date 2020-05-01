@@ -195,7 +195,10 @@ input[type="checkbox"] {
 }
 
 .Label {
-  border: 2px solid red;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -25px;
+  width: 200px;
 }
 
 .form-defaultMac {

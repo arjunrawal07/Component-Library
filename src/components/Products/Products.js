@@ -41,14 +41,37 @@ const Products = (props) => {
     return (
       <div className={classList}>
         <div className={imgClass}>
-          <div className="options">
-            <div className="heart"></div>
-            <div className="cart"></div>
-          </div>
+          <div className="options"></div>
         </div>
         <h4>{productName}</h4>
         <div className="rating">
-          <p>Rating</p>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+        </div>
+        <div className="costs">
+          <div className="pricetag">{pricetag} </div>
+          <div className="oldPrice"> {oldPrices}</div>
+        </div>
+      </div>
+    );
+  }
+  if (props.optionsLightBlue) {
+    classList += ` products-optionsLightBlue`;
+    return (
+      <div className={classList}>
+        <div className={imgClass}>
+          <div className="options"></div>
+        </div>
+        <h4>{productName}</h4>
+        <div className="rating">
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
         </div>
         <div className="costs">
           <div className="pricetag">{pricetag} </div>

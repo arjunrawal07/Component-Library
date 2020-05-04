@@ -87,11 +87,15 @@ const Products = (props) => {
       <div className={classList}>
         <div className={imgClass}></div>
         <div className="horizontalText">
-          <h4>{productName}</h4>
-          <div className="rating">
-            <p>Rating</p>
+          <div className="horizontalProductName">{productName}</div>
+          <div className="ratingHorizontal">
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
           </div>
-          <div className="costs">
+          <div className="costsHorizontal">
             <div className="pricetag">{pricetag} </div>
             <div className="oldPrice"> {oldPrices}</div>
           </div>
@@ -106,14 +110,34 @@ const Products = (props) => {
 
   if (props.defaultBeats) {
     classList += ` products-defaultBeats`;
+    return (
+      <div className={classList}>
+        <div className="beats">{productName}</div>
+        <div className="ratingBeats">
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+          <span>☆</span>
+        </div>{" "}
+        <div className="costsBeats">
+          <div className="pricetag">{pricetag} </div>
+          <div className="oldPrice"> {oldPrices}</div>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className={classList}>
       <h4>{productName}</h4>
       <div className="rating">
-        <p>Rating</p>
-      </div>
+        <span>☆</span>
+        <span>☆</span>
+        <span>☆</span>
+        <span>☆</span>
+        <span>☆</span>
+      </div>{" "}
       <div className="costs">
         <div className="pricetag">{pricetag} </div>
         <div className="oldPrice"> {oldPrices}</div>

@@ -53,19 +53,6 @@ storiesOf("Products", module)
       />
     </div>
   ))
-  .add("Horizontal Macbook Pro Default Hover", () => (
-    <div>
-      <Products
-        product="Apple Macbook Pro"
-        price="$499"
-        original="$599"
-        defaultMac
-        defaultMacImg
-        horizontal
-        horizontalHover
-      />
-    </div>
-  ))
   .add("Beats Default", () => (
     <div>
       <Products

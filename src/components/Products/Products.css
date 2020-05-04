@@ -28,7 +28,6 @@
 }
 h4 {
   text-align: center;
-  /* margin-top: 70%; */
 }
 .rating {
   padding-top: -20px;
@@ -106,40 +105,53 @@ h4 {
   padding-top: 30px;
   margin-left: 15px;
 }
-/* .heart {
-  margin-top: 4px;
-  margin-left: 40px;
-  background-color: white;
-  border: 2px solid #33a0ff;
-  height: 50px;
-  width: 50px;
-  border-radius: 30px;
-  background-image: url("https://i.imgur.com/D8I9wXv.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cart {
-  margin-top: -54px;
-  margin-left: 100px;
-  background-color: white;
-  border: 2px solid #33a0ff;
-  height: 50px;
-  width: 50px;
-  border-radius: 30px;
-  background-image: url("https://i.imgur.com/jfUqoMS.png");
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .products-horizontal {
   width: 570px;
   height: 224px;
 }
+.products-horizontal:hover {
+  width: 570px;
+  height: 224px;
+  background-color: #fafafb;
+}
+.horizontalProductName {
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  border: 2px solid purple;
+}
+.ratingHorizontal {
+  margin-left: 100px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.ratingHorizontal > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
 
+.ratingHorizontal > span:hover:before,
+.ratingHorizontal > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: yellow;
+}
+.costsHorizontal {
+  margin-left: 100px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  align-content: space-around;
+}
 .horizontalText {
   margin-left: 150px;
-  padding-top: 5px;
+  margin-top: -160px;
+  padding-bottom: -50px;
+  text-align: left;
 }
 
 .products-horizontalHover:hover {
@@ -152,4 +164,41 @@ h4 {
   background-image: url("https://i.imgur.com/FfnJPgZ.png");
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.beats {
+  margin-left: 175px;
+  padding-top: 20px;
+}
+
+.ratingBeats {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 172px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.ratingBeats > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+.ratingBeats > span:hover:before,
+.ratingBeats > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: yellow;
+}
+
+.costsBeats {
+  margin-left: 85px;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
 }

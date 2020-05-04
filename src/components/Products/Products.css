@@ -45,7 +45,7 @@ h4 {
 .rating > span:hover ~ span:before {
   content: "\2605";
   position: absolute;
-  color: yellow;
+  color: #ffc600;
 }
 .costs {
   text-align: center;
@@ -113,16 +113,16 @@ h4 {
 .products-horizontal:hover {
   width: 570px;
   height: 224px;
-  background-color: #fafafb;
+  background-color: lightgray;
 }
 .horizontalProductName {
   margin-top: 15px;
   margin-left: 100px;
-  margin-bottom: 25px;
-  border: 2px solid purple;
+  margin-bottom: 15px;
 }
 .ratingHorizontal {
   margin-left: 100px;
+  margin-bottom: 20px;
   unicode-bidi: bidi-override;
   direction: rtl;
 }
@@ -136,7 +136,7 @@ h4 {
 .ratingHorizontal > span:hover ~ span:before {
   content: "\2605";
   position: absolute;
-  color: yellow;
+  color: #ffc600;
 }
 .costsHorizontal {
   margin-left: 100px;
@@ -189,7 +189,7 @@ h4 {
 .ratingBeats > span:hover ~ span:before {
   content: "\2605";
   position: absolute;
-  color: yellow;
+  color: #ffc600;
 }
 
 .costsBeats {

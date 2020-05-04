@@ -62,7 +62,7 @@ h4 {
 }
 
 .oldPrice {
-  color: lightgray;
+  color: #5d656b;
   text-decoration: line-through;
 }
 
@@ -109,6 +109,15 @@ h4 {
 .products-horizontal {
   width: 570px;
   height: 224px;
+}
+.products-horizontalMac {
+  background-image: url("https://i.imgur.com/tmPo0zT.png");
+  width: 236px;
+  height: 153px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30px;
+  margin-left: 15px;
 }
 .products-horizontal:hover {
   width: 570px;

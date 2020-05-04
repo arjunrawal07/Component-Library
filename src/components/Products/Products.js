@@ -80,7 +80,9 @@ const Products = (props) => {
       </div>
     );
   }
-
+  if (props.horizontalMac) {
+    imgClass += "products-horizontalMac";
+  }
   if (props.horizontal) {
     classList += ` products-horizontal`;
     return (

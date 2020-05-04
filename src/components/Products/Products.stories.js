@@ -47,9 +47,9 @@ storiesOf("Products", module)
         product="Apple Macbook Pro"
         price="$499"
         original="$599"
-        defaultMac
-        defaultMacImg
         horizontal
+        horizontalMac
+        defaultMac
       />
     </div>
   ))

@@ -1,3 +1,7 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .products-defaultMac {
   width: 270px;
   height: 349px;
@@ -97,7 +101,7 @@ h4 {
   background-position-x: 50%;
   background-repeat: no-repeat;
   opacity: 1;
-  filter: brightness(100%);
+  filter: brightness(120%);
 }
 .options {
   width: 102px;
@@ -210,4 +214,107 @@ h4 {
   justify-content: center;
   align-items: center;
   align-content: space-around;
+}
+
+.beatsPic {
+  background-image: url("https://i.imgur.com/FfnJPgZ.png");
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+}
+.name {
+  margin-left: 225px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+.hot {
+  background-color: red;
+  width: 40px;
+  text-align: center;
+  color: white;
+  margin: 5px;
+}
+.stats {
+  margin-left: 50px;
+  margin-top: -40px;
+}
+.ratingBonus {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 172px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.ratingBonus > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+.ratingBonus > span:hover:before,
+.ratingBonus > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: #ffc600;
+}
+
+.reviews {
+  width: 100px;
+  margin-left: 275px;
+  margin-top: -30px;
+}
+.link a {
+  text-decoration: none;
+}
+.submitReview {
+  margin-left: 360px;
+  margin-top: -18px;
+  width: 150px;
+  color: #33a0ff;
+}
+
+.costsBonusBeats {
+  font-size: 25px;
+  margin-left: 225px;
+  margin-top: 30px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.pricetagBonus {
+  color: #ff4858;
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.oldPriceBonus {
+  color: #5d656b;
+  text-decoration: line-through;
+  font-size: 24px;
+}
+
+.description {
+  width: 500px;
+  margin-left: 225px;
+}
+
+.icons {
+  height: 100px;
+  display: flex;
+}
+.add-cart {
+  background-image: url("https://i.imgur.com/jfUqoMS.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 150px;
+  height: 46px;
+  margin-left: 225px;
+}
+
+.heart-icon {
+  width: 46px;
+  height: 46px;
 }

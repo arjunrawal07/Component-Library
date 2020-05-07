@@ -129,6 +129,54 @@ const Products = (props) => {
       </div>
     );
   }
+  if (props.addCart) {
+    classList += ` add-cart`;
+  }
+  if (props.hearticon) {
+    imgClass += ` heart-icon`;
+  }
+  if (props.inline) {
+    classList += "products-inline";
+    return (
+      <div className="beatsPic">
+        <div className="name"> Beats Solo2 On Ear Headphones - Black</div>
+        <div className="hot">HOT</div>
+        <div className="beats">{productName}</div>
+        <div className="stats">
+          <div className="ratingBonus">
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+          </div>{" "}
+          <div className="reviews">0 reviews</div>
+          <div className="submitReview">
+            <span className="link">
+              {" "}
+              <a href="">Sumbit a Review</a>
+            </span>
+          </div>
+        </div>
+        <div className="costsBonusBeats">
+          <div className="pricetagBonus">{pricetag} </div>
+          <div className="oldPriceBonus"> {oldPrices}</div>
+        </div>
+        <div className="description">
+          <p>
+            Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et
+            mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc
+            leifend laorevtr istique et congue. Vivamus adipiscin vulputate g
+            nisl ut dolor ...
+          </p>
+        </div>
+        <div className="icons">
+          <button className="add-cart"> Add to Cart</button>
+          <button className="heart-icon"></button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={classList}>
